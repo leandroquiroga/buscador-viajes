@@ -48,7 +48,7 @@ Para validar un mail use una expresion regular especifica, en donde si lo que es
 - Modal con infomacion detallada de cada viaje. 
 
 # Despliegue 📦
-
+[![Netlify Status](https://api.netlify.com/api/v1/badges/9c8a0b49-612f-4ece-94a9-6084525adc1e/deploy-status)](https://tusmejoresviajes.netlify.app/)
 # Contacto
 - [Linkedin](https://www.linkedin.com/in/leanquiroga95/)
 - [Frontend Mentor](https://www.frontendmentor.io/profile/leandroquiroga)
