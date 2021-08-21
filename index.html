@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Conoce toda la Argentina, desde punta a punta con increibles promociones, los mejores paquetes, 
+                        los mejores hoteles, los mejores paisejes">
+        <meta name="keywords" content="Viajes, promociones, Argentina, Turismo, Paquetes, Descuentos">
+        <title>Tu mejores vacaciones</title>
+        <!-- Icon -->
+        <link rel="shortcut icon" href="/image/svg/viajar.svg" type="image/x-icon">
+        <!-- CSS Styles -->
+        <link rel="stylesheet" href="/css/styles.css">
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;600;900&display=swap" rel="stylesheet">
+        <!-- CDN FontAwesome-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.css">
+        <!-- Styles Glider CSS-->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.css">
+        <!-- CDN Bootstrap-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    </head>
+    <body>
+        <div class="general">
+            <!-- Up Arrow -->
+            <button class="arrowUp hidden"><ion-icon name="arrow-round-up"></ion-icon></button>
+            <!-- Nav Menu -->
+            <header class=" nav-banner">
+                <section class=" d-flex justify-content-between align-center nav-menu">
+                    <h2 class="title-principal">Tus mejores vacaciones</h2>
+                    <div class="menu-hamburger"><img src="/image/svg/menu.svg" alt="menu" class="navbar-menu" id="open-menu"></div>
+                </section>
+
+                <!-- Panel -->
+                <section class="nav-rigth bg-dark">
+                    <article class="list-items">
+                        <div class="modal-menu">
+                            <div class="title-nav d-flex justify-content-between align-center">
+                                <h3 class="title">Tus mejores vacaciones</h3>
+                                <img src="/image/svg/cancel.svg" alt="close" class="logo-close" id="close-menu">
+                            </div>
+                            <div class="items">
+                                <ul>
+                                    <a href="#" class="nav-link"><li class="dropdown-item">Home</li></a>
+                                    <a href="#" class="nav-link"><li class="dropdown-item">Paquetes</li></a>
+                                    <a href="#" class="nav-link"><li class="dropdown-item">Promociones</li></a>
+                                    <a href="#" class="nav-link"><li class="dropdown-item">Nosotros</li></a>
+                                    <a href="#" class="nav-link"><li class="dropdown-item">Empleos</li></a>
+                                </ul>
+                            </div>
+                        </div>
+                    </article>
+                </section>
+
+                <!-- Carrousel -->
+                <section class=" container container-carrousel">
+                    <article class="carousel-container d-flex">
+                        <button aria-label="Anterior" class="carousel-anterior">
+                            <i class="fas fa-chevron-left fa-2x"></i>
+                        </button>
+
+                        <div class="carousel-List">
+                            <div class="carousel-Element">
+                                <img src="/image/cancun-tour.jpg" alt="Cancun" class="img-carrousel">
+                                <p class="text-description">Cancún - Mexico</p>
+                            </div>
+                            <div class="carousel-Element">
+                                <img src="/image/israel-tour.jpg" alt="Cancun" class="img-carrousel">
+                                <p class="text-description">Jerusalen - Israel</p>
+                            </div>
+                            <div class="carousel-Element">
+                                <img src="/image/rio-tour.jpg" alt="Cancun" class="img-carrousel">
+                                <p class="text-description">Rio de Janeiro - Brasil</p>
+                            </div>
+                            <div class="carousel-Element">
+                                <img src="/image/crucero.png"Cancun" class="img-carrousel">
+                                <p class="text-description">Cruceros por el mundo</p>
+                            </div>
+                            <div class="carousel-Element">
+                                <img src="/image/Bariloche.jpg" alt="Cancun" class="img-carrousel">
+                                <p class="text-description">Bariloche - Argentina</p>
+                            </div>
+                        </div>
+
+                        <button aria-label="Siguiente" class="carousel-siguiente">
+                            <i class="fas fa-chevron-right fa-2x"></i>
+                        </button>
+                    </article>
+
+                    <article class="carrousel-indicador" role="tablist"></article>
+
+                </section>
+            </header>
+            <main class="container sector-body">
+                <section class="p-2 section-form">
+                    <form method="GET" class="input-selectores">
+                        <select class="inputs-data form-select" id="packgeInternacional" aria-label="Default select example">
+                            <option selected>Paquetes Internacionales</option>
+                            <option value="Cancun">Cancún</option>
+                            <option value="Brasil">Brasil</option>
+                            <option value="Turquia">Turquia</option>
+                            <option value="Israel">Israel</option>
+                            <option value="Francia">Francia</option>
+                        </select>
+                        <select class="form-select inputs-data" id="packgeNacional"aria-label="Default select example">
+                            <option selected>Paquetes Nacionales</option>
+                            <option value="Bariloche">Bariloche</option>
+                            <option value="Usuhaia">Usuhaia</option>
+                            <option value="Mar del Plata">Mar del Plata</option>
+                            <option value="San Luis">San Luis</option>
+                            <option value="Mendoza">Mendoza</option>
+                            <option value="Tucuman">Tucuman</option>
+                        </select>
+                        <select class="form-select inputs-data" id="packgeCruise" aria-label="Default select example">
+                            <option selected>Crucero</option>
+                            <option value="Caribe">Tour Caribe</option>
+                            <option value="Europa">Tour Europa</option>
+                            <option value="Rio">Tour Rio de Janeiro</option>
+                        </select>
+                        <select class="form-select inputs-data" id="packExotic" aria-label="Default select example">
+                            <option selected>Exoticos</option>
+                            <option value="Madagascar">Madagascar</option>
+                            <option value="Rusia">Moscú</option>
+                            <option value="Emiratos Arabes">Emiratos Arabe Unidos</option>
+                            <option value="Tailandia">Tailandia</option>
+                        </select>
+                        <article class="button d-flex row justify-content-center align-center">
+                            <div class="d-flex justify-content-center align-center">
+                                <input class="btn  btn-dark mx-1" id="buscar" type="submit" value="Buscar">    
+                                <input class="btn btn-dark mx-1" id="reset" type="reset" value="Reset">
+                            </div>    
+                            <div class=" msg text-center"></div>
+                        </article>
+                    </form>
+                    <div class="spinner">
+                        <div class="spinner-grow" role="status">
+                            <span class="visually-hidden"></span>
+                        </div>
+                    </div>
+                    <div id="research" class="searchCard"></div>
+                </section>
+
+                <!--Card Paquetes Internaciones-->
+                <section class="card-tours">
+                    <article class="pack-intenacional">
+                        <h1 class="title-pack">Paquetes intenationales: </h1>
+                    </article>
+                    <article class="cards">
+
+                        <div class="card" style="width: 18rem;">
+                            <img src="/image/cancun-tour.jpg" class="img" alt="...">
+                            <div class="card-body row">
+                              <h5 class="card-title">Vuelo a Cancún</h5>
+                              <p class="card-text"> Hotel Riu Yucatan</p>
+                              <small class="decription">5 Estrellas</small> 
+                              <small class="disponibidad">Verano</small>
+                              <small class="precio">$90.000</small>
+                              <a href="#" class="btn btn-dark my-2 mx-0">Go somewhere</a>
+                            </div>
+                        </div>
+
+                        <div class="card" style="width: 18rem;">
+                            <img src="/image/israel-tour.jpg" class="img" alt="...">
+                            <div class="card-body row">
+                              <h5 class="card-title">Vuelo a Israel</h5>
+                              <p class="card-text"> Hotel Dan Panorama Jerusalem</p>
+                              <small class="decription">5 Estrellas</small> 
+                              <small class="disponibidad">Primavera</small>
+                              <small class="precio">$125.000</small>
+                              <a href="#" class="btn btn-dark my-2 mx-0">Go somewhere</a>
+                            </div>
+                        </div>
+
+                        <div class="card" style="width: 18rem;">
+                            <img src="/image/rio-tour.jpg" class="img" alt="...">
+                            <div class="card-body row">
+                              <h5 class="card-title">Vuelo a Brasil</h5>
+                              <p class="card-text"> Hotel Royal Rio Palace</p>
+                              <small class="decription">3 Estrellas</small> 
+                              <small class="disponibidad">Verano</small>
+                              <small class="precio">$10.000</small>
+                              <a href="#" class="btn btn-dark my-2 mx-0">Go somewhere</a>
+                            </div>
+                        </div>
+
+                        <div class="card" style="width: 18rem;">
+                            <img src="/image/turquia-tour.jpg" class="img" alt="...">
+                            <div class="card-body row">
+                              <h5 class="card-title">Vuelo a Turquia</h5>
+                              <p class="card-text"> Hotel Radisson Blu Istanbul Pera</p>
+                              <small class="decription">3 Estrellas</small> 
+                              <small class="disponibidad">Invierno</small>
+                              <small class="precio">$110.000</small>
+                              <a href="#" class="btn btn-dark my-2 mx-0">Go somewhere</a>
+                            </div>
+                        </div>
+
+                        <div class="card" style="width: 18rem;">
+                            <img src="/image/paris-tour.jpg" class="img" alt="...">
+                            <div class="card-body row">
+                              <h5 class="card-title">Vuelo a Francia</h5>
+                              <p class="card-text"> Hotel Le Relais Saint Honoré</p>
+                              <small class="decription">4 Estrellas</small> 
+                              <small class="disponibidad">Inverno</small>
+                              <small class="precio">$25.000</small>
+                              <a href="#" class="btn btn-dark my-2 mx-0">Go somewhere</a>
+                            </div>
+                        </div>
+                    </article>
+                </section>
+
+                <!--Card Paquetenes Nacionales-->
+                <section class="card-tours">
+                    <article class="pack-intenacional">
+                        <h1 class="title-pack">Paquetes Nacionales: </h1>
+                    </article>
+                    <article class="cards">
+
+                        <div class="card" style="width: 18rem;">
+                            <img src="/image/villa-huinid-hotel.jpg" class="img" alt="...">
+                            <div class="card-body row">
+                                <h5 class="card-title">Bariloche</h5>
+                                <p class="card-text"> Hotel Huinid Bustillo Hotel & Spa</p>
+                                <small class="decription">4 Estrellas</small> 
+                                <small class="disponibidad">Invierno</small>
+                                <small class="temporada">Temporada alta</small>
+                                <small class="precio">$10.000</small>
+                                <a href="#" class="btn btn-dark">Go somewhere</a>
+                            </div>
+                        </div>
+
+                        <div class="card" style="width: 18rem;">
+                            <img src="/image/villa-huapi-hotel.jpg" class="img" alt="...">
+                            <div class="card-body row">
+                                <h5 class="card-title">Bariloche</h5>
+                                <p class="card-text"> Hotel Villa Huapi</p>
+                                <small class="decription">4 Estrellas</small> 
+                                <small class="disponibidad">Inverno</small>
+                                <small class="temporada">Temporada alta</small>
+                                <small class="precio">$8.000</small>
+                                <a href="#" class="btn btn-dark">Go somewhere</a>
+                            </div>
+                        </div>
+
+                        <div class="card" style="width: 18rem;">
+                            <img src="/image/cristal-hotel.jpg" class="img" alt="...">
+                            <div class="card-body row">
+                                <h5 class="card-title">Bariloche</h5>
+                                <p class="card-text"> Hotel Cristal</p>
+                                <small class="decription">2 Estrellas</small> 
+                                <small class="disponibidad">Verano</small>
+                                <small class="precio">$12.000</small>
+                                <a href="#" class="btn btn-dark">Go somewhere</a>
+                            </div>
+                        </div>
+
+                        <div class="card" style="width: 18rem;">
+                            <img src="/image/las-hayas-ushuaia-resort.jpg" class="img" alt="...">
+                            <div class="card-body row">
+                                <h5 class="card-title">Usuhaia</h5>
+                                <p class="card-text"> Hotel Las Hayas Usuhaia Resort</p>
+                                <small class="decription">5 Estrellas</small>
+                                <small class="disponibidad">Invierno</small>
+                                <small class="precio">$15.500</small>
+                                <a href="#" class="btn btn-dark">Go somewhere</a>
+                            </div>
+                        </div>
+
+                        <div class="card" style="width: 18rem;">
+                            <img src="/image/los-yamanas-hotel.jpg" class="img" alt="...">
+                            <div class="card-body row">
+                                <h5 class="card-title">Usuhaia</h5>
+                                <p class="card-text"> Los Yamanas Hotel & Health Club</p>
+                                <small class="decription">4 Estrellas</small> 
+                                <small class="disponibidad">Invierno</small>
+                                <small class="precio">$19.000</small>
+                                <a href="#" class="btn btn-dark">Go somewhere</a>
+                            </div>
+                        </div>
+                        <div class="card" style="width: 18rem;">
+                            <img src="/image/nh-gran-hotel-provinciales.jpg" class="img" alt="...">
+                            <div class="card-body row">
+                                <h5 class="card-title">Mar del Plata</h5>
+                                <p class="card-text"> NH Gran Hotel Provinciales</p>
+                                <small class="decription">5 Estrellas</small> 
+                                <small class="disponibidad">Invierno</small>
+                                <small class="precio">$13.000</small>
+                                <a href="#" class="btn btn-dark">Go somewhere</a>
+                            </div>
+                        </div>
+                        <div class="card" style="width: 18rem;">
+                            <img src="/image/rivera-sur-mar-del-plata.jpg" class="img" alt="...">
+                            <div class="card-body row">
+                                <h5 class="card-title">Mar del Plata</h5>
+                                <p class="card-text"> Ribera Sur Mar Del Plata</p>
+                                <small class="decription">4 Estrellas</small> 
+                                <small class="disponibidad">Primavera</small>
+                                <small class="precio">$9.000</small>
+                                <a href="#" class="btn btn-dark">Go somewhere</a>
+                            </div>
+                        </div>
+                        <div class="card" style="width: 18rem;">
+                            <img src="/image/hermitage-hotel.jpg" class="img" alt="...">
+                            <div class="card-body row">
+                                <h5 class="card-title">Mar del Plata</h5>
+                                <p class="card-text"> Hermitage Hotel</p>
+                                <small class="decription">5 Estrellas</small> 
+                                <small class="disponibidad">Verano</small>
+                                <small class="precio">$15.000</small>
+                                <a href="#" class="btn btn-dark">Go somewhere</a>
+                            </div>
+                        </div>
+                        <div class="card" style="width: 18rem;">
+                            <img src="/image/gran-skorpios-hotel.jpg" class="img" alt="...">
+                            <div class="card-body row">
+                                <h5 class="card-title">Mar del Plata</h5>
+                                <p class="card-text"> Gran Hotel Skorpios</p>
+                                <small class="decription">3 Estrellas</small> 
+                                <small class="disponibidad">Otoño</small>
+                                <small class="precio">$7.000</small>
+                                <a href="#" class="btn btn-dark">Go somewhere</a>
+                            </div>
+                        </div>
+                        <div class="card" style="width: 18rem;">
+                            <img src="/image/epic-hotel-sl.jpg" class="img" alt="...">
+                            <div class="card-body row">
+                                <h5 class="card-title">San Luis</h5>
+                                <p class="card-text"> Epic Hotel San Luis</p>
+                                <small class="decription">4 Estrellas</small> 
+                                <small class="disponibidad">Otoño</small>
+                                <small class="precio">$8.500</small>
+                                <a href="#" class="btn btn-dark">Go somewhere</a>
+                            </div>
+                        </div>
+                        <div class="card" style="width: 18rem;">
+                            <img src="/image/hotel-regidor-sl.jpg" class="img" alt="...">
+                            <div class="card-body row">
+                                <h5 class="card-title">San Luis</h5>
+                                <p class="card-text"> Hotel Regidor</p>
+                                <small class="decription">3 Estrellas</small> 
+                                <small class="disponibidad">Invierno</small>
+                                <small class="precio">$6.000</small>
+                                <a href="#" class="btn btn-dark">Go somewhere</a>
+                            </div>
+                        </div>
+                        <div class="card" style="width: 18rem;">
+                            <img src="/image/portal-plaza-suites-M.jpg" class="img" alt="...">
+                            <div class="card-body row">
+                                <h5 class="card-title">Mendoza</h5>
+                                <p class="card-text"> Portal Plaza Suites</p>
+                                <small class="decription">4 Estrellas</small> 
+                                <small class="disponibidad">Invierno</small>
+                                <small class="precio">$7.000</small>
+                                <a href="#" class="btn btn-dark">Go somewhere</a>
+                            </div>
+                        </div>
+                        <div class="card" style="width: 18rem;">
+                            <img src="/image/sheraton-mendoza.jpg" class="img" alt="...">
+                            <div class="card-body row">
+                                <h5 class="card-title">Mendoza</h5>
+                                <p class="card-text"> Sheraton Mendoza</p>
+                                <small class="decription">5 Estrellas</small> 
+                                <small class="disponibidad">Invierno</small>
+                                <small class="precio">$16.000</small>
+                                <a href="#" class="btn btn-dark">Go somewhere</a>
+                            </div>
+                        </div>
+                        <div class="card" style="width: 18rem;">
+                            <img src="/image/premier-hotel-T.jpg" class="img" alt="...">
+                            <div class="card-body row">
+                                <h5 class="card-title">Tucuman</h5>
+                                <p class="card-text"> Hotel Premier</p>
+                                <small class="decription">3 Estrellas</small> 
+                                <small class="disponibidad">Primavera</small>
+                                <small class="precio">$4.000</small>
+                                <a href="#" class="btn btn-dark">Go somewhere</a>
+                            </div>
+                        </div>
+                    </article>
+                </section>
+
+                <!--Card Cruceros -->
+                <section class="card-tours">
+                    <article class="pack-intenacional">
+                        <h1 class="title-pack">Cruceros: </h1>
+                    </article>
+                    <article class="cards">
+
+                        <div class="card" style="width: 18rem;">
+                            <img src="/image/crucero-msc.jpg" class="img" alt="...">
+                            <div class="card-body row">
+                                <h5 class="card-title">Tour Rio De Janeiro</h5>
+                                <p class="card-crucero"> Crucero: MSC</p>
+                                <small class="camarotes">Camorotes </small> 
+                                <small class="habitaciones">Exterior: 
+                                    <small class="precio">$135.000</small>
+                                </small>
+                                <small class="habitaciones">Balcon: 
+                                    <small class="precio">$140.000</small>
+                                </small>
+                                <small class="habitaciones">Suite: 
+                                    <small class="precio">$150.000</small>
+                                </small>
+                                <a href="#" class="btn btn-dark">Go somewhere</a>
+                            </div>
+                        </div>
+
+                          <div class="card" style="width: 18rem;">
+                            <img src="/image/crucero-msc.jpg" class="img" alt="...">
+                            <div class="card-body row">
+                              <h5 class="card-title">Tour Europa</h5>
+                              <p class="card-crucero"> Crucero: MSC</p>
+                              <small class="camarotes">Camorotes </small> 
+                              <small class="camarores">Estandar: 
+                                  <small class="precio">$135.000</small>
+                              </small>
+                              <small class="camarotes">Balcon: 
+                                <small class="precio">$140.000</small>
+                            </small>
+                            <small class="camarotes">Suite: 
+                                <small class="precio">$150.000</small>
+                            </small>
+                              <a href="#" class="btn btn-dark">Go somewhere</a>
+                            </div>
+                          </div>
+
+                          <div class="card" style="width: 18rem;">
+                            <img src="/image/crucero-royal.jpg" class="img" alt="...">
+                            <div class="card-body row">
+                              <h5 class="card-title">Tour Caribe</h5>
+                              <p class="card-crucero"> Crucero: Royal Caribbean</p>
+                              <small class="camarotes">Camorotes </small> 
+                              <small class="camarores">Estandar: 
+                                  <small class="precio">$135.000</small>
+                              </small>
+                              <small class="camarotes">Balcon: 
+                                <small class="precio">$140.000</small>
+                            </small>
+                            <small class="camarotes">Suite: 
+                                <small class="precio">$150.000</small>
+                            </small>
+                              <a href="#" class="btn btn-dark">Go somewhere</a>
+                            </div>
+                          </div>
+                    </article>
+                </section>
+                
+                <!--Card Exoticos -->
+                <section class="card-tours">
+                    <article class="pack-intenacional">
+                        <h1 class="title-pack">Exoticos: </h1>
+                    </article>
+                    <article class="cards">
+
+                        <div class="card" style="width: 18rem;">
+                            <img src="/image/resort-nosy-be.jpg" class="img" alt="...">
+                            <div class="card-body row">
+                              <h5 class="card-title">Madagascar</h5>
+                              <p class="card-text"> Madagascar Resort Nosy Be</p>
+                              <small class="decription">3 Estrellas</small> 
+                              <small class="precio">$125.000</small>
+                              <a href="#" class="btn btn-dark my-2 mx-0">Go somewhere</a>
+                            </div>
+                        </div>
+
+                        <div class="card" style="width: 18rem;">
+                            <img src="/image/hotel-metropol-russia.jpg" class="img" alt="...">
+                            <div class="card-body row">
+                              <h5 class="card-title">Rusia</h5>
+                              <p class="card-text"> Hotel Metropol Moscow</p>
+                              <small class="decription">5 Estrellas</small> 
+                              <small class="precio">$86.000</small>
+                              <a href="#" class="btn btn-dark my-2 mx-0">Go somewhere</a>
+                            </div>
+                        </div>
+                        
+                        <div class="card" style="width: 18rem;">
+                            <img src="/image/ibis-hotel.jpg" class="img" alt="...">
+                            <div class="card-body row">
+                              <h5 class="card-title">Tailandia</h5>
+                              <p class="card-text">Ibis Bangkok Riverside</p>
+                              <small class="decription">3 Estrellas</small> 
+                              <small class="precio">$9.000</small>
+                              <a href="#" class="btn btn-dark my-2 mx-0">Go somewhere</a>
+                            </div>
+                        </div>
+                        
+                        <div class="card" style="width: 18rem;">
+                            <img src="/image/burj-al-arab.jpg" class="img" alt="...">
+                            <div class="card-body row">
+                              <h5 class="card-title">Emiratos Arabe</h5>
+                              <p class="card-text"> Burj Al Arab</p>
+                              <small class="decription">5 Estrellas</small> 
+                              <small class="precio">$360.000</small>
+                              <a href="#" class="btn btn-dark my-2 mx-0">Go somewhere</a>
+                            </div>
+                        </div>
+                    </article>
+                </section>
+            </main> 
+            <footer class="footer bg-dark p-1">
+                <section class="footer-nav">
+                    <article class="nav-block">
+                        <ul class="nav flex-column justify-content-center align-items-center">
+                            <a href="#" class="text-white my-1 nav-link"><li class="nav-item">Home</li></a>
+                            <a href="#" class="text-white my-1 nav-link"><li class="nav-item">Paquetes</li></a>
+                            <a href="#" class="text-white my-1 nav-link"><li class="nav-item">Promociones</li></a>
+                            <a href="#" class="text-white my-1 nav-link"><li class="nav-item">Nosotros</li></a>
+                            <a href="#" class="text-white my-1 nav-link"><li class="nav-item">Empleos</li></a>
+                        </ul>
+                    </article>
+                </section>
+                <section class="redes d-flex justify-content-center align-items row">
+                    <article class="d-flex justify-content-center align-items my-4 ">
+                        <div class="row">
+                            <h5 class="title-redes text-white text-center">Seguinos en nuestras redes:</h4>
+                            <div class="justify-content-center align-items d-flex">
+                                <a href="http://" target="_blank" class="text-white mx-2 icon-class"><ion-icon name="logo-twitter"></ion-icon></a>
+                                <a href="http://" target="_blank" class="text-white mx-2 icon-class"><ion-icon name="logo-instagram"></ion-icon></a>
+                                <a href="http://" target="_blank" class="text-white mx-2 icon-class"><ion-icon name="logo-facebook"></ion-icon></a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="registration col-12">
+                        <div class="container-fluid inputs">
+                            <form class="d-flex form-email">
+                              <input class="form-control me-2 " type="email" placeholder="Email" aria-label="Search" id="email">
+                              <button class="btn btn-outline-light" type="submit" id="send-form">Enviar</button>
+                            </form>
+                          </div>
+                    </article>
+                </section>
+                <section class="pay col-12 row">
+                    <article class="addres">
+                        <p class="text-addres text-white">Avenida Rivadavia 6855</p>
+                        <p class="text-addres text-white">Quilmes Oeste - Argentina</p>
+                        <p class="text-addres text-white"> Tel: 4285-1024</p>
+                    </article>
+                    <article class="pay">
+                        <img src="/image/payment.png" alt="pago" height="30" width="300">
+                    </article>
+                    <article class="copyrigth">
+                        <p class="text-white">Todos los derechos reservados &copy; Leandro Quiroga 2021</p>
+                    </article>
+                </section>
+            </footer>
+        </div>
+        <!-- Scripts -->
+        <script src="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.js"></script>
+        <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+        <script src="./js/functions/carrousel.js" type="module"></script>
+        <script src="./js/index.js" type="module"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+    </body>
+</html>
+
+<!--
+    - Documentar el proyecto y deployarlo 
+    FINNNNNNNNNNNNNNNNN ! 
+-->
